@@ -1,7 +1,7 @@
 {
-  "name": "{{ name }}",
+  "name": "test",
   "description": "{{ description }}",
-  "version": "{{ version }}",
+  "version": "0.0.1",
   "author": {
     "name": "{{ authorFullNameFrom author }}",
     "email": "{{ authorEmailFrom author }}"

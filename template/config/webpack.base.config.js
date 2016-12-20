@@ -1,7 +1,7 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 var outputFile = 'test'
-var globalName = 'Test'
+var globalName = 'TestPlugin'
 
 module.exports = {
   entry: './src/index.js',
