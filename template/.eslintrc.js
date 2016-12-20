@@ -23,8 +23,5 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     // trailing comma
     'comma-dangle': ['error', 'always-multiline'],
-    // beware of returning assignement
-    'no-return-assign': 'off',
-    'no-extend-native': 'warn',
   }
 }

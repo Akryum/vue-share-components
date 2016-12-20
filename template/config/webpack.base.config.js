@@ -28,6 +28,10 @@ module.exports = {
         options: {
           loaders: {
             css: ExtractTextPlugin.extract('css-loader'),
+            less: ExtractTextPlugin.extract('css-loader!less-loader'),
+            sass: ExtractTextPlugin.extract('css-loader!sass-loader'),
+            scss: ExtractTextPlugin.extract('css-loader!sass-loader'),
+            stylus: ExtractTextPlugin.extract('css-loader!stylus-loader'),
           },
         },
       },
