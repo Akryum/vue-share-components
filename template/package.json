@@ -1,7 +1,17 @@
 {
-  "name": "v-tooltip",
-  "version": "1.0.4",
-  "description": "Easy tooltips with Vue 2.x",
+  "name": "{{ name }}",
+  "description": "{{ description }}",
+  "version": "{{ version }}",
+  "author": {
+    "name": "{{ authorFullNameFrom author }}",
+    "email": "{{ authorEmailFrom author }}"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "plugin"
+  ],
+  "license": "MIT",
   "main": "dist/v-tooltip.js",
   "module": "index.js",
   "scripts": {
@@ -13,12 +23,6 @@
     "type": "git",
     "url": "git+https://github.com/Akryum/vue-tooltip.git"
   },
-  "keywords": [
-    "vue",
-    "tooltip"
-  ],
-  "author": "Guillaume Chau <guillaume.b.chau@gmail.com>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Akryum/vue-tooltip/issues"
   },

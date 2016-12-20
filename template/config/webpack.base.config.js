@@ -1,13 +1,14 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-var outputFile = 'v-tooltip'
+var outputFile = 'test'
+var globalName = 'Test'
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: './dist',
     filename: outputFile + '.js',
-    library: 'VTooltip',
+    library: globalName,
     libraryTarget: 'umd',
   },
   module: {
