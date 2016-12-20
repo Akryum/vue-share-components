@@ -19,9 +19,13 @@ module.exports = {
       type: 'string',
       required: true,
       message: 'Library name for browser usage',
-      /* default (answers) {
-        return kebabToCamel(answers.name)
-      } */
+      default (answers) {
+        if (answers.name) {
+          return kebabToCamel(answers.name)
+        } else {
+          return ''
+        }
+      }
     },
     description: {
       type: 'string',
