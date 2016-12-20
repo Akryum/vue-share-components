@@ -1,3 +1,13 @@
+function kebabToCamel (name) {
+  name = name.replace(/\-(\w)/g, (match, p1) => {
+    return p1.toUpperCase();
+  });
+  name = name.replace(/^\w/, (match) => {
+    return match.toUpperCase();
+  });
+  return name
+}
+
 module.exports = {
   prompts: {
     name: {
@@ -8,7 +18,10 @@ module.exports = {
     library: {
       type: 'string',
       required: true,
-      message: 'Library name (variable for browser usage)'
+      message: 'Library name for browser usage',
+      /* default (answers) {
+        return kebabToCamel(answers.name)
+      } */
     },
     description: {
       type: 'string',
