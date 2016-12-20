@@ -26,9 +26,9 @@ Vue.component('test', Test)
 
 ```
 import '{{ name }}/dist/test.css'
-import Test from '{{ name }}/dist/test'
+import {{ library }} from '{{ name }}/dist/test'
 
-Vue.use(Test)
+Vue.use({{ library }})
 ```
 
 ---
