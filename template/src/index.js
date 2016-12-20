@@ -7,6 +7,7 @@ export function install (Vue) {
 export const Test = _Test
 
 export default {
-  version: '{{ version }}',
+  /* eslint-disable no-undef */
+  version: VERSION,
   install,
 }

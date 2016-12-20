@@ -1,7 +1,10 @@
+var webpack = require('webpack')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 var outputFile = '{{ name }}'
 var globalName = '{{ library }}'
+
+var config = require('../package.json')
 
 module.exports = {
   entry: './src/index.js',
@@ -48,6 +51,9 @@ module.exports = {
     // Put external libraries like lodash here
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'VERSION': JSON.stringify(config.version),
+    }),
     new ExtractTextPlugin(outputFile + '.css'),
   ],
 }
