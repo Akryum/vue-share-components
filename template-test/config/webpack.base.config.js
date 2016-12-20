@@ -1,7 +1,7 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-var outputFile = '{{ name }}'
-var globalName = '{{ library }}'
+var outputFile = 'test'
+var globalName = 'TestPlugin'
 
 module.exports = {
   entry: './src/index.js',
@@ -29,23 +29,14 @@ module.exports = {
         options: {
           loaders: {
             css: ExtractTextPlugin.extract('css-loader'),
-            {{#if_eq css "less"}}
             less: ExtractTextPlugin.extract('css-loader!less-loader'),
-            {{/if_eq}}
-            {{#if_eq css "sass"}}
             sass: ExtractTextPlugin.extract('css-loader!sass-loader'),
             scss: ExtractTextPlugin.extract('css-loader!sass-loader'),
-            {{/if_eq}}
-            {{#if_eq css "stylus"}}
             stylus: ExtractTextPlugin.extract('css-loader!stylus-loader'),
-            {{/if_eq}}
           },
         },
       },
     ],
-  },
-  externals: {
-    // Put external libraries like lodash here
   },
   plugins: [
     new ExtractTextPlugin(outputFile + '.css'),

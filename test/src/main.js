@@ -1,13 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-/* import '../../template/dist/test.css'
-import Test from '../../template/dist/test' */
+/* import '../../template-test/dist/test.css'
+import Test from '../../template-test/dist/test' */
 
-import T from '../../template/dist/test'
+import T from '../../template-test/dist/test'
 console.log(T)
 
-import Plugin, { Test } from '../../template'
+import Plugin, { Test } from '../../template-test'
 console.log(Plugin)
 console.log(Test)
 

@@ -1,7 +1,7 @@
 {
-  "name": "{{ name }}",
+  "name": "test",
   "description": "{{ description }}",
-  "version": "{{ version }}",
+  "version": "0.0.1",
   "author": {
     "name": "{{ authorFullNameFrom author }}",
     "email": "{{ authorEmailFrom author }}"
@@ -12,23 +12,21 @@
     "plugin"
   ],
   "license": "MIT",
-  "main": "dist/{{ name }}.js",
+  "main": "dist/v-tooltip.js",
   "module": "index.js",
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.config.js --progress --watch",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.config.js --progress --hide-modules",
     "prepublish": "npm run build"
   },
-  {{#unless_eq githubAccount ""}}
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/{{ githubAccount }}/{{ name }}.git"
+    "url": "git+https://github.com/Akryum/vue-tooltip.git"
   },
   "bugs": {
-    "url": "https://github.com/{{ githubAccount }}/{{ name }}/issues"
+    "url": "https://github.com/Akryum/vue-tooltip/issues"
   },
-  "homepage": "https://github.com/{{ githubAccount }}/{{ name }}#readme",
-  {{/unless_eq}}
+  "homepage": "https://github.com/Akryum/vue-tooltip#readme",
   "devDependencies": {
     "babel-core": "^6.0.0",
     "babel-eslint": "^7.1.1",
@@ -44,18 +42,8 @@
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
     "extract-text-webpack-plugin": "^2.0.0-beta.4",
-    {{#if_eq css "less"}}
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
-    {{/if_eq}}
-    {{#if_eq css "sass"}}
-    "node-sass": "^4.0.0",
-    "sass-loader": "^4.1.0",
-    {{/if_eq}}
-    {{#if_eq css "stylus"}}
-    "stylus": "^0.54.5",
-    "stylus-loader": "^2.4.0",
-    {{/if_eq}}
     "vue-loader": "^10.0.0",
     "vue-template-compiler": "^2.1.6",
     "webpack": "^2.1.0-beta.28",
