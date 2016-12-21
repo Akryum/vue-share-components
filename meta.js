@@ -70,5 +70,6 @@ module.exports = {
       const endPosition = author.indexOf('>')
       return author.slice(startPosition + 1, endPosition)
     }
-  }
+  },
+  completeMessage: "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev"
 }
