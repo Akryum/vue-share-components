@@ -13,21 +13,21 @@ npm install --save {{ name }}
 
 # Usage
 
-```
+```javascript
 import Vue from 'vue'
 import {{ library }} from '{{ name }}'
 
 Vue.use({{ library }})
 ```
 
-```
+```javascript
 import Vue from 'vue'
 import { Test } from '{{ name }}'
 
 Vue.component('test', Test)
 ```
 
-```
+```javascript
 import '{{ name }}/dist/test.css'
 import {{ library }} from '{{ name }}/dist/test'
 
