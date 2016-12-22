@@ -1,5 +1,7 @@
 # An easy-to-use vue-cli template to publish components
 
+[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+
 > Share Vue components to the world!
 
 A very simple [vue-cli](https://github.com/vuejs/vue-cli) template to write and publish vue plugins with `.vue` components.

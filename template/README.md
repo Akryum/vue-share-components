@@ -5,6 +5,12 @@
 
 {{ description }}
 
+## Table of contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example](#example)
+
 # Installation
 
 ```
