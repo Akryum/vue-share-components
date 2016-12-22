@@ -1,4 +1,4 @@
-# A simple vue-cli template to publish components
+# An easy-to-use vue-cli template to publish components
 
 > Share Vue components to the world!
 
