@@ -8,3 +8,29 @@ A very simple [vue-cli](https://github.com/vuejs/vue-cli) template to write and 
 npm i -g vue-cli
 vue init Akryum/vue-share-components plugin-name
 ```
+
+# Plugin Development
+
+## Installation
+
+```
+npm install
+```
+
+## Watch and compile
+
+```
+npm run dev
+```
+
+## Publish to npm
+
+```
+npm publish
+```
+
+## Manual build
+
+```
+npm run build
+```
