@@ -70,6 +70,8 @@ Vue.component('test', Test)
 <script src="{{ name }}/dist/{{ name }}.js"></script>
 ```
 
+The plugin should be auto-installed. If not, you can install it manually with the instructions below.
+
 Install all the components:
 
 ```javascript
