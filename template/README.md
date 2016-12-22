@@ -53,6 +53,8 @@ import { Test } from '{{ name }}/dist/{{ name }}'
 Vue.component('test', Test)
 ```
 
+**⚠️ You may have to setup your bundler to embed the css file in your page.**
+
 ## Browser
 
 ```html
