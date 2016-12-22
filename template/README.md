@@ -35,11 +35,22 @@ Vue.component('test', Test)
 
 ## Distribution import
 
+Install all the components:
+
 ```javascript
 import '{{ name }}/dist/{{ name }}.css'
 import {{ library }} from '{{ name }}/dist/{{ name }}'
 
 Vue.use({{ library }})
+```
+
+Use specific components:
+
+```javascript
+import '{{ name }}/dist/{{ name }}.css'
+import { Test } from '{{ name }}/dist/{{ name }}'
+
+Vue.component('test', Test)
 ```
 
 ## Browser
