@@ -45,7 +45,7 @@ Install all the components:
 
 ```javascript
 import '{{ name }}/dist/{{ name }}.css'
-import {{ library }} from '{{ name }}/dist/{{ name }}'
+import {{ library }} from '{{ name }}/dist/{{ name }}.common'
 
 Vue.use({{ library }})
 ```
@@ -54,7 +54,7 @@ Use specific components:
 
 ```javascript
 import '{{ name }}/dist/{{ name }}.css'
-import { Test } from '{{ name }}/dist/{{ name }}'
+import { Test } from '{{ name }}/dist/{{ name }}.common'
 
 Vue.component('test', Test)
 ```
@@ -67,7 +67,7 @@ Vue.component('test', Test)
 <link rel="stylesheet" href="{{ name }}/dist/{{ name }}.css"/>
 
 <script src="vue.js"></script>
-<script src="{{ name }}/dist/{{ name }}.js"></script>
+<script src="{{ name }}/dist/{{ name }}.browser.js"></script>
 ```
 
 The plugin should be auto-installed. If not, you can install it manually with the instructions below.
