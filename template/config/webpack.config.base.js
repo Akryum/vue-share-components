@@ -8,12 +8,6 @@ var config = require('../package.json')
 
 module.exports = {
   entry: './src/index.js',
-  output: {
-    path: './dist',
-    filename: outputFile + '.js',
-    library: globalName,
-    libraryTarget: 'umd',
-  },
   module: {
     rules: [
       {
@@ -46,9 +40,6 @@ module.exports = {
         },
       },
     ],
-  },
-  externals: {
-    // Put external libraries like lodash here
   },
   plugins: [
     new webpack.DefinePlugin({

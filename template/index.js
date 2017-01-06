@@ -1,3 +1,3 @@
-export default from './dist/{{ name }}'
-export * from './dist/{{ name }}'
+export default from './dist/{{ name }}.common'
+export * from './dist/{{ name }}.common'
 import './dist/{{ name }}.css'

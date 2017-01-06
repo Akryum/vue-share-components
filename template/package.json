@@ -12,11 +12,14 @@
     "plugin"
   ],
   "license": "MIT",
-  "main": "dist/{{ name }}.js",
+  "main": "dist/{{ name }}.common.js",
+  "unpkg": "dist/{{ name }}.browser.js",
   "module": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack --config config/webpack.dev.config.js --progress --watch",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.config.js --progress --hide-modules",
+    "dev": "cross-env NODE_ENV=development webpack --config config/webpack.config.dev.js --progress --watch",
+    "build": "npm run build:browser && npm run build:common",
+    "build:browser": "cross-env NODE_ENV=production webpack --config config/webpack.config.browser.js --progress --hide-modules",
+    "build:common": "cross-env NODE_ENV=production webpack --config config/webpack.config.common.js --progress --hide-modules",
     "prepublish": "npm run build"
   },
   {{#unless_eq githubAccount ""}}
