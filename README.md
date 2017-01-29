@@ -39,7 +39,7 @@ npm run dev
 
 ## Use it in another project
 
-While developping, you can follow the install instructions of your plugin and link it into the project that uses it.
+While developing, you can follow the install instructions of your plugin and link it into the project that uses it.
 
 In the plugin folder:
 
