@@ -7,7 +7,7 @@ var globalName = '{{ library }}'
 
 module.exports = merge(base, {
   output: {
-    path: './dist',
+    path: __directory + '/dist',
     filename: outputFile + '.common.js',
     libraryTarget: 'commonjs2',
   },
